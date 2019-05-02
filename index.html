@@ -10,11 +10,8 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
 <body class="w3-light-grey">
-<!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  <!-- The Grid -->
   <div class="w3-row-padding">
-    <!-- Left Column -->
     <div class="w3-third">
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
@@ -78,10 +75,112 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <br>
         </div>
       </div><br>
-    <!-- End Left Column -->
     </div>
-    <!-- Right Column -->
     <div class="w3-twothird">
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-o fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Exam-Taking Web Application</b></h5>
+          <ul>
+            <li>JavaScript front-end, with PHP cURL forwarding to processing in middle, and MySQL Server in the back-end</li>
+            <li>Features login page with cookie support, along with a login for students/professors</li>
+            <li>Uses questions looking for answers in Python, which the website then auto-grades</li>
+          </ul>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>HTML Web Server</b></h5>
+          <ul>
+            <li>Created a server in C and Python</li>
+            <li>Server sends HTML page via TCP to localhost, which is then viewable via any browser</li>
+          </ul>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Mini Unix Shell</b></h5>
+          <ul>
+            <li>Created a Unix shell with support for some of the same commands in C</li>
+            <li>Supports piping and redirection of any of the supported commands</li>
+            <li>Used to perform some of the tasks in the Wikipedia Scraper below</li>
+          </ul>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Wikipedia Scraper</b></h5>
+          <ul>
+            <li>Scrapes all Wikipedia pages with two letter names (i.e. aa, ab, ac, ...)</li>
+            <li>Finds and sorts all words on all such pages according to most common</li>
+            <li>Uses Bash commands for grep, wget, and lynx to create URLs, access sites, and convert resultant .html to .txt</li>
+            <li>Multi-threaded program finds and creates .txt files for all sites, while also sorting words found in .txt files</li>
+          </ul>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Sort Directory By Size</b></h5>
+          <ul>
+            <li>Recursively and concurrently sorts a directory in Linux using C according to file size</li>
+            <li>Sorts each directory found using threads, merging the semi-sorted list of files at the end</li>
+            <li>Used POSIX function getdents() in C to accurately get file sizes</li>
+          </ul>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Programming Language Interpreter</b></h5>
+          <ul>
+            <li>Created specifications for a programming language with minimal support for math, print, and variables</li>
+            <li>Wrote interpreter in C++ that takes input of file, reading contents then printing interpretation</li>
+            <li>Support for interpreting errors, along with resulting error code</li>
+            <li>Built in parts, as seen in Github, starting with a file lexer, then a recursive decent parser, and finally an interpreter</li>
+          </ul>
+        </div>
+      </div>
+    <div class="w3-container w3-card w3-white">
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-o fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projects</h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Exam-Taking Web Application</b></h5>
+        <ul>
+          <li>JavaScript front-end, with PHP cURL forwarding to processing in middle, and MySQL Server in the back-end</li>
+          <li>Features login page with cookie support, along with a login for students/professors</li>
+          <li>Uses questions looking for answers in Python, which the website then auto-grades</li>
+        </ul>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>HTML Web Server</b></h5>
+        <ul>
+          <li>Created a server in C and Python</li>
+          <li>Server sends HTML page via TCP to localhost, which is then viewable via any browser</li>
+        </ul>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Mini Unix Shell</b></h5>
+        <ul>
+          <li>Created a Unix shell with support for some of the same commands in C</li>
+          <li>Supports piping and redirection of any of the supported commands</li>
+          <li>Used to perform some of the tasks in the Wikipedia Scraper below</li>
+        </ul>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Wikipedia Scraper</b></h5>
+        <ul>
+          <li>Scrapes all Wikipedia pages with two letter names (i.e. aa, ab, ac, ...)</li>
+          <li>Finds and sorts all words on all such pages according to most common</li>
+          <li>Uses Bash commands for grep, wget, and lynx to create URLs, access sites, and convert resultant .html to .txt</li>
+          <li>Multi-threaded program finds and creates .txt files for all sites, while also sorting words found in .txt files</li>
+        </ul>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Sort Directory By Size</b></h5>
+        <ul>
+          <li>Recursively and concurrently sorts a directory in Linux using C according to file size</li>
+          <li>Sorts each directory found using threads, merging the semi-sorted list of files at the end</li>
+          <li>Used POSIX function getdents() in C to accurately get file sizes</li>
+        </ul>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Programming Language Interpreter</b></h5>
+        <ul>
+          <li>Created specifications for a programming language with minimal support for math, print, and variables</li>
+          <li>Wrote interpreter in C++ that takes input of file, reading contents then printing interpretation</li>
+          <li>Support for interpreting errors, along with resulting error code</li>
+          <li>Built in parts, as seen in Github, starting with a file lexer, then a recursive decent parser, and finally an interpreter</li>
+        </ul>
+      </div>
+    </div>
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Work Experience</h2>
         <div class="w3-container">
@@ -143,58 +242,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </ul>
         </div>
       </div><br>
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-o fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projects</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Exam-Taking Web Application</b></h5>
-          <ul>
-            <li>JavaScript front-end, with PHP cURL forwarding to processing in middle, and MySQL Server in the back-end</li>
-            <li>Features login page with cookie support, along with a login for students/professors</li>
-            <li>Uses questions looking for answers in Python, which the website then auto-grades</li>
-          </ul>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>HTML Web Server</b></h5>
-          <ul>
-            <li>Created a server in C and Python</li>
-            <li>Server sends HTML page via TCP to localhost, which is then viewable via any browser</li>
-          </ul>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Mini Unix Shell</b></h5>
-          <ul>
-            <li>Created a Unix shell with support for some of the same commands in C</li>
-            <li>Supports piping and redirection of any of the supported commands</li>
-            <li>Used to perform some of the tasks in the Wikipedia Scraper below</li>
-          </ul>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Wikipedia Scraper</b></h5>
-          <ul>
-            <li>Scrapes all Wikipedia pages with two letter names (i.e. aa, ab, ac, ...)</li>
-            <li>Finds and sorts all words on all such pages according to most common</li>
-            <li>Uses Bash commands for grep, wget, and lynx to create URLs, access sites, and convert resultant .html to .txt</li>
-            <li>Multi-threaded program finds and creates .txt files for all sites, while also sorting words found in .txt files</li>
-          </ul>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Sort Directory By Size</b></h5>
-          <ul>
-            <li>Recursively and concurrently sorts a directory in Linux using C according to file size</li>
-            <li>Sorts each directory found using threads, merging the semi-sorted list of files at the end</li>
-            <li>Used POSIX function getdents() in C to accurately get file sizes</li>
-          </ul>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Programming Language Interpreter</b></h5>
-          <ul>
-            <li>Created specifications for a programming language with minimal support for math, print, and variables</li>
-            <li>Wrote interpreter in C++ that takes input of file, reading contents then printing interpretation</li>
-            <li>Support for interpreting errors, along with resulting error code</li>
-            <li>Built in parts, as seen in Github, starting with a file lexer, then a recursive decent parser, and finally an interpreter</li>
-          </ul>
-        </div>
-      </div>
     <!-- End Right Column -->
     </div>
   <!-- End Grid -->
